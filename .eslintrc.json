@@ -1,5 +1,7 @@
 {
-  "extends": [
-    "nextjs"
-  ]
+  "extends": ["nextjs"],
+  "globals": {
+    "fs": true,
+    "path": true
+  }
 }
