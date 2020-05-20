@@ -3,15 +3,15 @@ import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import Header from '../components/Header/Header';
+import Header from '@/components/Header/Header';
 
 export default function Home(props) {
   const { contentPages } = props;
 
   return (
-    <div>
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>Introdución a Next.js</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -28,14 +28,16 @@ export default function Home(props) {
             {contentPages.map((page) => (
               <li key={page.id}>
                 <Link href="/contents/[slug]" as={`/contents/${page.slug}`}>
-                  <a>{page.title}</a>
+                  <a>
+                    <span className="topic">{page.title}</span>
+                  </a>
                 </Link>
               </li>
             ))}
           </ol>
         )}
       </main>
-    </div>
+    </>
   );
 }
 

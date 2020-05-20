@@ -2,6 +2,29 @@ body {
   font-family: $font-primary;
 }
 
+code {
+  background-color: #ffe6cb;
+  border-radius: 3px;
+  color: #f76081;
+  font-size: 14px;
+  padding: 4px 6px;
+}
+
+ul,
+ol {
+  li {
+    line-height: 160%;
+  }
+}
+
+.topic {
+  background-color: #a3f4ee;
+  border-radius: 3px;
+  color: #00444f;
+  font-size: 20px;
+  padding: 4px 6px;
+}
+
 .list-centered {
   margin-left: 150px;
   margin-right: 150px;

@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid #87edd8;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.button {
+  background-color: lighten($color: #00444f, $amount: 15);
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.list {
+  font-size: 12px;
+  list-style-position: inside;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.title {
+  margin-top: 0;
+}

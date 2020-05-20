@@ -3,14 +3,24 @@ import fs from 'fs';
 import path from 'path';
 import remark from 'remark';
 import html from 'remark-html';
+import Head from 'next/head';
+import Header from '@/components/Header/Header';
 
 export default function Contents(props) {
   const { title, tags, contentHtml } = props;
   return (
-    <main>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-    </main>
+    <>
+      <Head>
+        <title>Introdución a Next.js</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Header />
+      <main>
+        <h2>{title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      </main>
+    </>
   );
 }
 
