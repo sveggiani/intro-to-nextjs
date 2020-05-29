@@ -13,6 +13,7 @@ export default function ShowsPage(props) {
       </Head>
 
       <Header />
+
       <main>
         <h2>Server-side Rendering</h2>
         <p>
@@ -20,9 +21,7 @@ export default function ShowsPage(props) {
           <span role="img" aria-label="bat emoji">
             🦇
           </span>{' '}
-          <em>Batman</em> TV shows from{' '}
-          <strong>{process.env.NEXT_PUBLIC_API_NAME}</strong>{' '}
-          <span className="topic">inlined public ENV var</span>
+          <em>Batman</em> TV shows from:<code>{process.env.API_URL}</code>
         </p>
 
         {shows && (

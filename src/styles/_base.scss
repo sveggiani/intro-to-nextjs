@@ -1,9 +1,11 @@
+@import "@/styles/_colors.scss";
+
 * {
   box-sizing: border-box;
 }
 
 a {
-  color: lighten($color: #00444f, $amount: 15);
+  color: lighten($color: $sherpa-blue, $amount: 15);
 
   &:hover {
     text-decoration: none;
@@ -11,14 +13,26 @@ a {
 }
 
 body {
-  color: #00444f;
+  color: $sherpa-blue;
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px;
+}
+
+hr {
+  background-color: $tequila;
+  border: 0;
+  height: 1px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 img {
   height: auto;
   width: 100%;
+
+  .no-responsive & {
+    width: auto;
+  }
 }
 
 main {

@@ -1,11 +1,30 @@
+@import "colors";
+
+blockquote {
+  p {
+    &::before {
+      color: $riptide;
+      content: "❝";
+      // display: inline;
+      margin-right: 5px;
+    }
+    &::after {
+      color: $riptide;
+      content: "❞";
+      // display: inline;
+      margin-left: 5px;
+    }
+  }
+}
+
 body {
   font-family: $font-primary;
 }
 
 code {
-  background-color: #ffe6cb;
+  background-color: $tequila;
   border-radius: 3px;
-  color: #f76081;
+  color: $brink-pink;
   font-size: 14px;
   padding: 4px 6px;
 }
@@ -18,9 +37,9 @@ ol {
 }
 
 .topic {
-  background-color: #a3f4ee;
+  background-color: $ice-cold;
   border-radius: 3px;
-  color: #00444f;
+  color: $sherpa-blue;
   font-size: 20px;
   padding: 4px 6px;
 }
@@ -30,6 +49,22 @@ ol {
   margin-right: 150px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-medium {
+  font-size: 26px;
+}
+
 .text-big {
   font-size: 30px;
+}
+
+.text-small {
+  font-size: 12px;
+
+  code {
+    font-size: 12px;
+  }
 }

@@ -57,7 +57,11 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps(context) {
+  const { params } = context;
+
+  // console.log(context);
+
   const currentFile = contentPaths.find(
     (file) => file?.frontmatter?.data?.slug === params.slug
   );

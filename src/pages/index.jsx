@@ -18,8 +18,8 @@ export default function Home(props) {
       <Header />
 
       <main>
-        <p className="text-big">
-          Vamos a conocer sobre las características principales de{' '}
+        <p className="text-center">
+          We are going to know the main features of{' '}
           <a href="https://nextjs.org">Next.js!</a>
         </p>
 
