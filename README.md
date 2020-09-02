@@ -1,30 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+## Welcome to Next.js Introduction
 
-## Getting Started
+### Setup
 
-First, run the development server:
+1. Run `yarn install` in the folder in which you cloned the repository. _This is the folder containing the `package.json` file._
+2. Run `yarn dev` in the same folder from your terminal. You should get a `ready - started server on http://localhost:3000` message if everything went Ok.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application working.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Help
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In case you need some help feel free to contact me at:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [Telegram](https://t.me/efedoce)
+- [@wiredse at Twitter](https://twitter.com/wiredse)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I'll see you at the Meetup!
